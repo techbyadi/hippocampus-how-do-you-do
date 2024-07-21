@@ -70,9 +70,13 @@ function handleSportsCategoryClick() {
   headerTextEl.classList.toggle("question");
   displayQuestion();
   displayOptions();
+}
+
+function handleOptionsClick(){
   counterSports++;
 }
 
 /*----------------------------- Event Listeners -----------------------------*/
 
 sportsButtonEl.addEventListener("click", handleSportsCategoryClick);
+mainSectionEl.addEventListener('click', handleOptionsClick);
