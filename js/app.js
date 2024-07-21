@@ -40,6 +40,7 @@ let sportButton, literatureButton;
 let chooseCategoryString = "";
 let counterSports = 0;
 let counterLiterature = 0;
+let result = 0;
 
 /*------------------------ Cached Element References ------------------------*/
 
@@ -49,6 +50,7 @@ let headerTextEl = document.querySelector(".h4");
 let mainSectionEl = document.querySelector(".category");
 let footerSectionEl = document.querySelector('.footer');
 let sectionEl = document.querySelector('.main');
+let headerEl = document.querySelector('#header');
 
 /*-------------------------------- Functions --------------------------------*/
 
@@ -118,13 +120,29 @@ function handleNextButtonClick(event) {
       event.target.textContent = "Result";
     }
     if (counterSports === sports.length) {
-      sectionEl.innerHTML = "";
+      sectionEl.removeChild(footerSectionEl);
+      if(result>4)
+        headerTextEl.textContent = `You did great! your final score is: ${result}`;
+      else
+        headerTextEl.textContent = `You did okay, better luck next time. Your final score is: ${result}`;
+      headerEl.appendChild(headerTextEl);
     }
   }
 }
 
+function handleResultClick(event) {
+  if (event.target.classList.contains("options")) {
+    if (event.target.textContent === sports[counterSports].answer) {
+      event.target.className = "rightanswer";
+      result++;
+    } else {
+      event.target.className = "wronganswer";
+    }
+  }
+}
 
 /*----------------------------- Event Listeners -----------------------------*/
 
 sportsButtonEl.addEventListener("click", handleSportsCategoryClick);
 footerSectionEl.addEventListener('click', handleNextButtonClick);
+mainSectionEl.addEventListener('click', handleResultClick);

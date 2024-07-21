@@ -96,3 +96,35 @@ body {
 .footer{
   
 }
+
+.rightanswer{
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  border-color: #4E3D42;
+  font-family: system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: green;
+}
+
+.wronganswer{
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  border-color: #4E3D42;
+  font-family: system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: pink;
+}
