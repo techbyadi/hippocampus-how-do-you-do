@@ -20,6 +20,7 @@ h4 {
   text-align: center;
   color: white;
   font-size: 20px;
+  line-height:1.5;
   font-family: system-ui, sans-serif;
 }
 
@@ -36,7 +37,7 @@ body {
 
 .category {
   display: flex;
-  gap: 100px;
+  gap: 90px;
   flex-wrap: wrap;
 }
 
@@ -79,4 +80,19 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #4E3D42;
+}
+
+.next {
+  height: 30px;
+  width: 80px;
+  border-radius: 8px;
+  border-color: #4E3D42;
+  font-family: system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color:  #14768A;
+}
+
+.footer{
+  
 }
