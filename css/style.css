@@ -1,0 +1,82 @@
+.main {
+  height: 460px;
+  width: 500px;
+  background-color: #14768A;
+  padding: 24px 72px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:50px ;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #4E3D42;
+  font-size: 32px;
+}
+
+h4 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/assets/background.jpeg'); 
+  background-size: cover; 
+  background-position: center;
+}
+
+.category {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.cat {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  border-color: #4E3D42;
+  font-family: system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4E3D42;;
+}
+
+#sports {
+  background-image: url('/assets/sports.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+}
+
+#literature {
+  background-image: url('/assets/literature.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.question {
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  font-family: system-ui, sans-serif;
+}
+
+.options {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  border-color: #4E3D42;
+  font-family: system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4E3D42;
+}
