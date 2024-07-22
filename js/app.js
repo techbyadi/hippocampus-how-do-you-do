@@ -41,6 +41,7 @@ let chooseCategoryString = "";
 let counterSports = 0;
 let counterLiterature = 0;
 let result = 0;
+let isAnswered = false;
 
 /*------------------------ Cached Element References ------------------------*/
 
@@ -108,10 +109,6 @@ function renderQnAState(){
 }
 
 
-function renderLastQuestionState(){
-  clearOptions();
-}
-
 function handleNextButtonClick(event) {
   if (event.target.classList.contains("next")) {
     counterSports++;
@@ -121,7 +118,7 @@ function handleNextButtonClick(event) {
     }
     if (counterSports === sports.length) {
       sectionEl.removeChild(footerSectionEl);
-      if(result>4)
+      if(result>=4)
         headerTextEl.textContent = `You did great! your final score is: ${result}`;
       else
         headerTextEl.textContent = `You did okay, better luck next time. Your final score is: ${result}`;
@@ -133,13 +130,26 @@ function handleNextButtonClick(event) {
 function handleResultClick(event) {
   if (event.target.classList.contains("options")) {
     if (event.target.textContent === sports[counterSports].answer) {
-      event.target.className = "rightanswer";
+      event.target.className = "rightAnswer";
       result++;
     } else {
-      event.target.className = "wronganswer";
+      event.target.className = "wrongAnswer";
     }
+    disableAllOptions();
   }
 }
+
+function disableAllOptions() {
+  const buttons = mainSectionEl.getElementsByClassName("options");
+  for (let button of buttons) {
+    button.disabled = true;
+  }
+}
+
+function hightLightRightAnswer(){
+  const buttons = mainSectionEl.getElementsByClassName("options");
+}
+
 
 /*----------------------------- Event Listeners -----------------------------*/
 
