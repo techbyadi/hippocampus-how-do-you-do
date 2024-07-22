@@ -31,7 +31,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: url('/assets/background.jpeg'); 
+  background-image: url('../assets/background.jpeg'); 
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -55,13 +55,13 @@ body {
 }
 
 #sports {
-  background-image: url('/assets/sports.png'); 
+  background-image: url('../assets/sports.png'); 
   background-size: cover; 
   background-position: center; 
 }
 
 #literature {
-  background-image: url('/assets/literature.png'); 
+  background-image: url('../assets/literature.png'); 
   background-size: cover; 
   background-position: center; 
 }
