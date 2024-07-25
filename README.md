@@ -8,6 +8,7 @@
 
 __Hippocampus How-Do-You-Do:__ This quiz game checks with your hippocampus to see how it's doing! Test your knowledge across two categories: "Sports" and "Literature." Choose between questions on athletic feats and sports trivia, or explore classic novels and literary figures. 
 
+[Project Planning](https://docs.google.com/document/d/1JWaEP3e2c8cprWID5UWjuu2xhNM9s8_GGCSyGHn3yz0/edit)
 
 # **How to Play**
 
@@ -36,7 +37,7 @@ Add here...
 *
 * 
 
-# Icebox functionalities
+# Icebox Functionalities
 
 * 
 *
