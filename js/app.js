@@ -45,7 +45,7 @@ const sports = [
 ];
 
 /*-------------------------------- Constants --------------------------------*/
-const headerText = "Choose a category";
+const headerText = "Select a Category";
 
 /*---------------------------- Variables (state) ----------------------------*/
 
